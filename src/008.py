@@ -1,11 +1,12 @@
 def find_min_idx(a):
     n = len(a)
     min_idx = 0
-    for i in range(1,n):
+    for i in range(1, n):
         if a[i] < a[min_idx]:
             min_idx = i
 
     return min_idx
+
 
 def sel_sort(a):
     result = []
@@ -18,5 +19,10 @@ def sel_sort(a):
 
 
 if __name__ == '__main__':
-    d = [2,4,5,1,3]
+    d = [2, 4, 5, 1, 3]
     print(sel_sort(d))
+
+    x = 1
+    y = 2
+    # 파이썬에서 값 바꾸기 , 를 이용.
+    x, y = y, x
